@@ -5,15 +5,6 @@ Based on Max Stoiber boilerplate.
 
 Quick setup for new performance orientated, offline–first React.js applications featuring Redux, hot–reloading, PostCSS, react-router, ServiceWorker, AppCache, FontFaceObserver and Mocha.
 
-Made with :heart: by [Max Stoiber](https://twitter.com/mxstbr)!
-
-[dep-status-img]: https://david-dm.org/mxstbr/react-boilerplate.svg
-[dep-status-link]: https://david-dm.org/mxstbr/react-boilerplate
-[dev-dep-status-img]: https://david-dm.org/mxstbr/react-boilerplate/dev-status.svg
-[dev-dep-status-link]: https://david-dm.org/mxstbr/react-boilerplate#info=devDependencies
-[ci-img]: https://travis-ci.org/mxstbr/react-boilerplate.svg?branch=master
-[ci]: https://travis-ci.org/mxstbr/react-boilerplate
-
 -----
 
 Version 3.0 is actively being developed on the [v3.0.0 branch], please check it out and leave feedback!
