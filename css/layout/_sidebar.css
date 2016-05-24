@@ -1,0 +1,102 @@
+.sidebar {
+  background-color: $color-2;
+  color: $mid-grey;
+}
+
+@media screen and (max-width: $screen-break) {
+  .sidebar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    background-color: $color-2a;
+  }
+}
+
+  .sidebar p {
+    color: $mid-grey;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .sidebar h2 {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+
+  .sidebar h6 {
+    font-size: .9rem;
+  }
+  @media screen and (max-width: $screen-break) {
+
+    .sidebar h6 {
+      font-size: 1.618rem;
+    }
+  }
+  .sidebar ul li {
+    list-style: none;
+    text-transform: uppercase;
+  }
+
+  .sidebar ul li h6 small{
+    font-size: 0.618rem;
+  }
+
+  .sidebar .list-group {
+    margin: 0;
+    border: none;
+  }
+
+    .sidebar .list-group .list-item {
+      text-align: left;
+      padding-left: 20px;
+      color: $mid-grey;
+      transition: all .5s ease;
+    }
+    @media screen and (min-width: $screen-break-lg){
+      .sidebar .list-group .list-item {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+      .sidebar h3 {
+        color: $mid-grey;
+      }
+
+      .sidebar .list-group .list-item p{
+        margin: 0;
+        padding: 0;
+        color: $color-1;
+        line-height: 2rem;
+        text-align: center;
+        padding-right: 2rem;
+      }
+
+        .sidebar .list-group .list-item a {
+          color: $mid-grey;
+        }
+          .sidebar .list-group .list-item a:hover {
+            text-decoration: none;
+            border-bottom: 2px solid $color-2;
+          }
+          .sidebar .list-group .list-item a:before {
+            content: ' /  ';
+          }
+
+    .sidebar .list-group .list-item:hover {
+      background-color: $color-4;
+    }
+
+    .sidebar .list-group .list-item:hover p, .sidebar .list-group .list-item:hover a,  .sidebar .list-group .list-item:hover h6{
+      color: $color-2;
+    }
+
+  @media screen and (max-width: $screen-break) {
+    .sidebar-email {
+      font-size: 1.3rem !important;
+      white-space: nowrap;
+    }
+  }

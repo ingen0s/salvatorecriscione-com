@@ -1,0 +1,130 @@
+/* Animation */
+
+.animatedloading {
+  animation: rotateX 2s linear infinite;
+}
+
+@keyframes rotateX {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.homepage-enter {
+  opacity: 0.01;
+}
+
+.homepage-enter.homepage-enter-active {
+  opacity: 1;
+  transition: opacity 1500ms ease-in;
+}
+
+.homepage-leave {
+  opacity: 1;
+}
+
+.homepage-leave.homepage-leave-active {
+  opacity: 0.01;
+  transition: opacity 2300ms ease-in;
+}
+
+
+.homepage-appear {
+  opacity: 0.01;
+}
+
+.homepage-appear.homepage-appear-active {
+  opacity: 1;
+  transition: opacity 1.5s ease-in;
+}
+
+.wrappercontainer {
+  transition: all 1s ease;
+}
+
+.menu.isOpening, .menu.isClosing {
+  transition: 1s ease;
+  transform-origin: 0px 0px;
+}
+.menu.isOpening {
+  transform: translate3d(0,0,0);
+}
+
+.menu.isClosing {
+  transform: translate3d(-110%,0,0);
+}
+
+@media screen and (max-width: $screen-break) {
+  .menu.isOpening {
+    transform: translate3d(0,0,0);
+  }
+
+  .menu.isClosing {
+    transform: translate3d(-110% ,0,0);
+  }
+}
+.faded {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
+}
+  .faded.open {
+    background-color: rgba(0,0,0,.4);
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  @media screen and (max-width: $screen-break) {
+    .faded.open {
+      width: 30%;
+      left: 69%;
+    }
+  }
+
+  .faded.close {
+    display: none;
+  }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.wrappercontainer.wrapperopen, .wrappercontainer.wrapperclose {
+  transition: all 1s ease;
+}
+.wrappercontainer.wrapperclose {
+  width: 100%;
+}
+
+.wrappercontainer.wrapperopen {
+  transform: translate(30%, 0);
+  transform: translate3d(calc(30% + 10px), 0, 0);
+  width: 100%;
+}
+
+@media screen and (max-width: $screen-break) {
+  .wrappercontainer.wrapperopen {
+    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.header .toggle {
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+  animation-delay: 1s;
+}

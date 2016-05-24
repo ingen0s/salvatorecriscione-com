@@ -1,0 +1,58 @@
+html {
+  font-size: 14px;
+}
+
+@media screen and (min-width: $screen-break-lg) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: $screen-break) {
+  html {
+    font-size: 10px;
+  }
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.62rem;
+}
+
+p {margin-bottom: 1.3rem;}
+
+h1, h2, h3, h4 {
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  margin-top: 0;
+  font-size: 4.236rem;
+}
+
+h2,.h2 {font-size: 2.618rem;}
+
+h3, .h3 {font-size: 1.618rem;}
+
+h4, .h4 {font-size: 1.32rem;}
+
+h6, .h6 {font-size: 1rem; line-height: 1.62rem;}
+
+p, .p { font-size: 1rem; line-height: 1.62rem;}
+
+small, .font_small {font-size: 0.818rem;}
+
+@media screen and (max-width: $screen-break) {
+  h2,.h2 {font-size: 2.618rem;}
+
+  h3, .h3 {font-size: 1.618rem;}
+
+  h4, .h4 {font-size: 1.618rem; line-height: 2.62rem;}
+
+  h6, .h6 {font-size: 1.618rem; line-height: 2.62rem;}
+
+  p, .p { font-size: 1.618rem; line-height: 2.62rem;}
+
+  small, .font_small {font-size: 1.618rem;}
+}

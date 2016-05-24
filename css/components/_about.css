@@ -1,0 +1,98 @@
+.whoami {
+  color: $color-2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.whoami a{
+  color: $mid-grey;
+}
+.instagramfeed {
+  height: 100%;
+}
+.instagramfeed img {
+  transition: all .5s ease;
+}
+
+
+.whoami a:hover, .whoami a:focus, .whoami a:active {
+  color: $color-2;
+  text-decoration: none;
+  border-bottom: 2px solid $color-2;
+}
+
+.workpastcontainer {
+  padding-left: 10px !important;
+}
+
+.workpast {
+  padding-left: 10px !important;
+  margin-left: 15px;
+  border-left: 3px solid $color-2;
+  margin-top: 15px;
+}
+
+.workpast:hover {
+  background-color: $color-4;
+  color: $color-2 !important;
+}
+
+  .workpast p {
+    color: $mid-grey;
+    margin-bottom: 5px;
+  }
+
+    .workpast:hover p, .workpast:hover p .text-muted {
+      color: $color-2;
+    }
+
+    .workpast p .text-muted {
+      color: $color-1a;
+      font-size: .8rem;
+    }
+
+    .workpast p .text-muted:before {
+      content: '(';
+    }
+
+    .workpast p .text-muted:after {
+      content: ')';
+    }
+
+  .workpast footer {
+    font-size: .8rem;
+    letter-spacing: 1px;
+    margin-top: 0;
+  }
+    .workpast footer a {
+      color: $color-4;
+      text-decoration: none;
+    }
+
+      .workpast footer a:hover, .workpast footer a:focus, .workpast footer a:active {
+        color: $color-3;
+      }
+
+
+.whoami .row .padded {
+  padding: 10px;
+}
+
+.whoami h1 {
+  color: $color-4;
+}
+
+.whoami .instagrampick {
+  height: calc(33.3333333vh - 6.6666667px);
+  overflow: hidden;
+}
+
+@media screen and (max-width: $screen-break) {
+  .whoami .instagrampick {
+    height: auto;
+    overflow: visible;
+  }
+
+  .endpage {
+    padding-bottom: 50px;
+  }
+}

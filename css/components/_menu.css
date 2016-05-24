@@ -1,0 +1,101 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 10px;
+  width: calc(30% - 10px);
+  height: 100%;
+  overflow: hidden;
+  z-index: 9999;
+  padding-top: 10px;
+  padding-right: 5px;
+  background-color: $color-2;
+}
+
+@media screen and (max-width: $screen-break) {
+  .menu {
+    width: calc(70% - 10px);
+  }
+}
+
+  .closethismenu {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    opacity: 1;
+    z-index: 9999;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: $color-4;
+    color: $color-1;
+    animation: fadeIn 1s ease;
+  }
+
+    @media screen and (max-width: $screen-break) {
+      .closethismenu {
+        top: 10px;
+        right: 10px;
+      }
+
+      .closethismenu .fa-3x {
+        font-size: 2.6rem;
+      }
+    }
+
+    .menu .closethismenu:hover {
+      color: $color-6;
+    }
+
+    .menu .closethismenu:hover{
+      color: $color-6;
+    }
+
+      .menu a .menuitem {
+        height: calc(33.333334% - 3px);
+        width: 100%;
+      }
+
+        .menu a .menuitem .menuiteminner {
+          padding-top: 5px;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0,0,0,0);
+          transition: all .5s ease;
+        }
+
+        .menu a:hover .menuitem .menuiteminner{
+          background-image: none !important;
+          background-color: $color-4 !important;
+          background-color: $color-4a !important;
+        }
+
+
+      .menu a .menuitem h6 {
+        font-weight: 400;
+        color: #FFF;
+        padding-left: 10px;
+      }
+        .menu a .menuitem .imghomemenu {
+          margin-left: auto;
+          margin-right: auto;
+          height: 100px;
+          width: auto;
+        }
+
+          @media screen and (max-width: $screen-break) {
+            .menu a .menuitem center .imghomemenu {
+              height: 40px;
+              width: 40px;
+            }
+          }
+
+      .menu a .menuitem h4 {
+        color: #FFF;
+        text-align: center;
+        font-weight: 400;
+      }
+
+      .menu a:focus, .menu a:active, .menu a:hover {
+        text-decoration: none;
+      }

@@ -1,0 +1,34 @@
+/*This file contains all styles related to the footer of the site/application.*/
+
+.footer {
+  background-color: $color-4;
+  background-color: $color-4a;
+  color: $color-1;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-top: 10px !important;
+}
+
+  .footer h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-kerning: auto;
+    margin-top: 0;
+  }
+
+  .footer h4 {
+    margin-top: 0;
+    padding-right: 5px;
+  }
+
+  .footer ul {
+    padding-left: 20px;
+  }
+
+  .footer .progress {
+    margin-top: 3px;
+  }
+
+  .footer .list-group .list-item {
+    list-style: circle;
+  }

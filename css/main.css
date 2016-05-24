@@ -1,0 +1,29 @@
+/*
+	Theme Name: Gnocchi UI
+	Theme URI: http://salvatorecriscione.com
+	Description: HTML5 WordPress Theme
+	Version: 1.0.0
+	Author: Salvatore Criscione
+	Author URI: http://salvatorecriscione.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+@charset 'UTF-8';
+
+/* 1. Vendors */
+@import 'vendor/*.css';
+
+/* 2. Configuration and helpers */
+@import 'utils/*.css';
+
+/* 3. Base stuff */
+@import 'base/*.css';
+
+/* 4. Layout-related sections */
+@import 'layout/*.css';
+
+/* 5. Components */
+@import 'components/*.css';

@@ -1,0 +1,225 @@
+/*This file contains very basic styles.*/
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+  background-color: #FFF;
+}
+
+body {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body.js-lato-loaded {
+	font-family: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection {
+  background: $color-4;
+  color: $color-2;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+.thirdHeight {
+  min-height: calc(33.3333333% - 6.6666667px);
+  min-height: calc(33.3333333vh - 6.6666667px);
+  height: calc(33.3333333% - 6.6666667px);
+  overflow: hidden;
+}
+
+.sixtyHeight {
+  min-height: calc(16.6666667% - 3.3333334px);
+  min-height: calc(16.6666667vh - 3.3333334px);
+  height: calc(16.6666667% - 3.3333334px);
+}
+
+.secondHeight {
+  min-height: calc(66.6666666% - 13.3333334px);
+  min-height: calc(66.6666666vh - 13.3333334px);
+}
+
+.zeroHeight {
+  height: 0px;
+}
+
+.fullheight {
+  min-height: calc(100% - 20px);
+  min-height: calc(100vh - 20px);
+  height: calc(100% - 20px);
+}
+
+@media screen and (max-width: $screen-break) {
+  .thirdHeight, .secondHeight, .fullheight, .sixtyHeight {
+    min-height: auto;
+    height: auto;
+  }
+}
+
+.desktoponly {
+  display: inline-block !important;
+}
+
+@media screen and (max-width: $screen-break) {
+  .desktoponly {
+    display: none !important;
+  }
+}
+
+
+.mobileonly {
+  display: none !important;
+}
+
+@media screen and (max-width: $screen-break) {
+  .mobileonly {
+    display: inline-block !important;
+  }
+}
+
+.bg1 {
+  background-color: $color-1;
+  background-color: $color-1a;
+}
+
+.bg2 {
+  background-color: $color-2;
+  background-color: $color-2a;
+  color: $mid-grey;
+}
+
+.bg3 {
+  background-color: $color-3;
+  background-color: $color-3a;
+}
+
+.bg4 {
+  background-color: $color-4;
+  background-color: $color-4a;
+}
+
+.bg5 {
+  background-color: $color-5;
+  background-color: $color-5a;
+}
+
+.bg6 {
+  background-color: $color-6;
+  background-color: $color-6a;
+}
+
+
+.row div {
+  padding: 0;
+}
+
+.wrapper {
+  background-color: $color-3;
+  padding: 10px;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.wrapper, body, .wrappercontainer {
+  overflow-x: hidden;
+}
+
+.wrappercontainer {
+
+}
+
+
+/* BANNERS */
+.react-cookie-banner {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 50px;
+  background-color: $color-2a;
+  z-index: 10000;
+  display: inline-block;
+}
+@media screen and (max-width: $screen-break) {
+  .react-cookie-banner {
+    height: 100px;
+    background-color: $color-2;
+  }
+}
+  .react-cookie-banner .cookie-message:before{
+    content: '';
+  }
+
+  .react-cookie-banner .button-close {
+    float: right;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-2;
+    background-color: $color-3;
+    margin-left: 20px;
+  }
+  @media screen and (max-width: $screen-break) {
+    .react-cookie-banner .button-close {
+      width: 100%;
+      float: none;
+      margin: 0;
+    }
+  }
+
+    .react-cookie-banner .button-close:hover {
+      background-color: $color-4a;
+      cursor: pointer;
+    }
+
+/* ERRORS */
+
+.notfound {
+  height: 66.6666666%;
+  height: 66.6666666vh;
+  background-color: $color-2a;
+  color: $color-4;
+}
+
+  .notfound h1 {
+    font-size: 10em;
+    text-align: center;
+  }
+
+  .notfound p {
+    text-align: center;
+  }
+
+    .notfound p a {
+      color: $color-4;
+    }
+
+      .notfound p a:hover, .notfound p a:active, .notfound p a:focus {
+        color: $color-1;
+        text-decoration: underline;
+      }

@@ -1,0 +1,164 @@
+.content {
+  padding-top: 15px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  color: $color-1;
+  background-color: $color-3;
+  background-color: $color-3a;
+}
+@media screen and (max-width: $screen-break) {
+  .content {
+    background-color: $color-2;
+    color: $mid-grey;
+  }
+}
+
+  .content .imghome {
+    padding-right: 0;
+    height: calc(33% - 40px);
+    height: calc(33vh - 40px);
+  }
+  @media screen and (max-width: $screen-break) {
+    .content .imghome {
+      max-width: 140px;
+    }
+  }
+  .content .content-text {
+    padding-left: 15px;
+  }
+
+  .content p {
+    margin-bottom: 0;
+  }
+
+  .content h1 {
+    margin-bottom: .1em;
+    text-transform: uppercase;
+  }
+
+.contentside {
+  transition: all .5s ease;
+  background-color: $color-2a;
+  position: relative;
+}
+
+@media screen and (max-width: $screen-break) {
+  .contentside {
+    height: 250px;
+  }
+}
+
+
+  .contentside .inner {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    transition: all .5s ease;
+  }
+    .contentside h1 {
+      margin-top: calc(50% - 6rem);
+      color: $color-2;
+      opacity: .1;
+      text-align: center;
+    }
+
+    .contentside:hover .inner {
+      top: 5%;
+      left: 5%;
+      width: 90%;
+      height: 90%;
+      opacity: .4;
+    }
+
+    .contentside:hover h1 {
+      opacity: 1;
+    }
+
+  .contentside:hover {
+    background-color: $color-4;
+  }
+
+  .contentside h2 {
+    color: $color-1;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 2rem;
+    margin-top: 2rem;
+  }
+
+  @media screen and (max-width: $screen-break) {
+    .contentside h3 { margin-top: 1rem;}
+    .contentside h4 { padding-bottom: 1rem;}
+  }
+
+  .contentside h2 {
+    color: $color-1;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+.portfoliocontainer {
+  background-color: $color-2a;
+  color: #333;
+}
+
+.firstpost {
+  min-height: 66.6666667vh;
+  height: 66.6666667vh;
+  height: 66.6666667%;
+}
+
+.div-img-portofolio {
+  overflow: hidden;
+}
+  .post:hover .div-img-portofolio img {
+    transform: scale(1.4);
+  }
+@media screen and (max-width: $screen-break) {
+  .div-img-portofolio {
+    height: 400px !important;
+  }
+}
+
+  .post .textcontent {
+    color: $mid-grey;
+    padding-left: 40px;
+  }
+
+    .post .textcontent .title {
+      color: $mid-grey;
+      text-transform: none;
+      padding-top: 30px;
+    }
+
+      .post:hover .textcontent .title {
+        color: $color-4;
+        text-transform: none;
+      }
+
+    .post .textcontent .brief {
+        color: $mid-grey;
+        padding-top: 20px;
+    }
+
+      .post .textcontent .brief a {
+        display: none;
+      }
+
+
+.postopen {
+  border-radius: 5px;
+  background-color: $color-2;
+  color: $mid-grey;
+}
+
+  .postopen .title {
+    color: $color-4;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
